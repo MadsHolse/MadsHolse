@@ -1,136 +1,82 @@
-/* Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacket Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jacket Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Stylish Jackets for Every Season</h1>
+            <p>Stay warm and look great with our exclusive collection.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
 
-header .logo {
-    font-size: 24px;
-    font-weight: 700;
-    display: inline-block;
-}
+    <section id="products">
+        <h2>Our Jackets</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/jacket1.jpg" alt="Winter Jacket">
+                <h3>Winter Jacket</h3>
+                <p>$120</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/jacket2.jpg" alt="Leather Jacket">
+                <h3>Leather Jacket</h3>
+                <p>$150</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/jacket3.jpg" alt="Raincoat">
+                <h3>Raincoat</h3>
+                <p>$90</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
-header .nav-links {
-    list-style: none;
-    float: right;
-}
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We’re passionate about crafting jackets that combine comfort, durability, and style. Shop with confidence and keep warm in any weather.</p>
+    </section>
 
-header .nav-links li {
-    display: inline-block;
-    margin-left: 20px;
-}
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
 
-header .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <footer>
+        <p>&copy; 2024 Jacket Store. All rights reserved.</p>
+    </footer>
 
-/* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    background-color: #ff4500;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Product Grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.product {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-}
-
-.product h3 {
-    margin: 10px 0;
-}
-
-.product .btn {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.product .btn:hover {
-    background-color: #ff4500;
-}
-
-/* Contact Form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form .btn {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form .btn:hover {
-    background-color: #ff4500;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
+    <script src="script.js"></script>
+</body>
+</html>
